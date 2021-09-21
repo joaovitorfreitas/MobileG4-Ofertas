@@ -7,10 +7,40 @@ export default function UserRegister( { navigation }) {
 
   return (
     <SafeAreaView style={styles.container}>
+        <View>
             <View> 
-                <Text>TESTE</Text>
+                <Text>Por Favor,Coloque as suas informações:</Text>
             </View>
           <StatusBar style="auto" hidden={true}/>
+
+          <View>
+          <Text>Nome: </Text>
+            <TextInput
+            style={styles.input}    
+            /> 
+
+          <Text>Email: </Text>
+            <TextInput
+            style={styles.input}    
+            />       
+
+          <Text>Senha: </Text>
+            <TextInput
+            style={styles.input}    
+            />    
+
+            <Text>Confirmação de senha: </Text>
+            <TextInput
+            style={styles.input}    
+            />     
+
+             <TouchableOpacity
+              onPress={() => navigation.navigate("UserRegister")}
+            > 
+            <Text>Cadastrar</Text>
+            </TouchableOpacity>  
+            </View>
+            </View>
     </SafeAreaView>
   );
 }
