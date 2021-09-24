@@ -1,29 +1,49 @@
-<SafeAreaView style={styles.container}>
-<View>
-<View>
+import { StatusBar } from 'expo-status-bar';
+import React, { useState } from 'react';
+import { SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, View, Image, ScrollView } from 'react-native';
+
+
+export default function PerfilProduto( { navigation }) {
+
+  return (
+    <ScrollView style={styles.container}>
+        <View style={styles.container2}> 
           <Image
-            source={require("../../assets/Banana.png")}
-          />
-        </View>
-    <View> 
-        <Text>Nome Produto</Text>
-    </View>
+              style={styles.imgPerfil}
+                source={require("../../assets/usuariomasculinoperfil.png")}
+            />
+            
+            <View style={{width:"60%"}}> 
+              <Text style={styles.txtPerfil}>Nome:</Text>
+            </View>
+            <TextInput
+            style={styles.input}    
+            />
+            <View style={{width:"60%"}}> 
+              <Text style={styles.txtPerfil}>Email:</Text>
+            </View>      
+            <TextInput
+            style={styles.input}    
+            />   
+        </View> 
+  </ScrollView>      
+   
+  );
+}
 
-  <View>
-  <Text>R$:2,50 </Text>
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#733BE3',
+    height: "100%",
+    width: "100%",
+    },
+    container2: {
+      backgroundColor: '#EDEAF2',
+      height: "85%",
+      width: "90%",
+      borderRadius: 15
 
-  <Text>Quantidade </Text>
+    }
+  
+});
 
-  <Text>1 </Text>
-  <StatusBar style="auto" hidden={true}/>
-           
-
-    <TouchableOpacity
-      onPress={() => navigation.navigate("UserRegister")}
-    > 
-    <Text>Reservar</Text>
-    </TouchableOpacity>  
-
-    </View>
-    </View>
-</SafeAreaView>

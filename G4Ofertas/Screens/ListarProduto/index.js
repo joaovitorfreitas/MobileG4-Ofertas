@@ -1,40 +1,99 @@
-<SafeAreaView>
-        
-          <View>
-          <Image
+import { StatusBar } from 'expo-status-bar';
+import React, { useState } from 'react';
+import { SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, View, Image, ScrollView } from 'react-native';
+
+
+
+export default function ListarProduto( { navigation }) {
+
+  return (
+    <ScrollView style={{backgroundColor:"#EDEAF2"}}>
+      <View style ={{marginLeft: "15%"}}>
+        <View style={{width:'80%', height:220, backgroundColor:'#733BE3', borderRadius:13, justifyContent:'center', alignItems:'center', marginTop:30}}>
+
+         <Image
+           style={styles.imgSize}
           source={require("../../assets/Banana.png")}
-          />
-         </View>
-
-          <View>
-          <Text>Nome Produto </Text>
-          <Text >Unidades:7 </Text>
-          <Text >R$2,50 </Text>
-          </View>
+        />
 
         <View>
-          <Image
-            source={require("../../assets/Tomate.png")}
-            />
+          <Text style={{marginLeft: 12, color:"#FFF"}}>Banana da terra</Text>              
         </View>
-     
-        <View>
-            <Text>Nome Produto </Text>
-            <Text>Unidades:7</Text>
-            <Text>R$2,50</Text>
+    
+        <View style={{marginTop: 15}}> 
+          <Text style={{fontSize:14, color: "#FFF"}}>Unidades: <Text style={{fontSize:12, color: "#FFF"}}>22</Text></Text>
         </View>
-        <View>
-          <Image
+      </View> 
+      </View>
+
+      <View style ={{marginLeft: "15%"}}>
+        <View style={{width:'80%', height:220, backgroundColor:'#733BE3', borderRadius:13, justifyContent:'center', alignItems:'center', marginTop:30}}>
+
+         <Image
+           style={styles.imgSize}
           source={require("../../assets/Banana.png")}
-          />
-         </View>
+        />
 
-          <View>
-          <Text>Nome Produto </Text>
-          <Text >Unidades:7 </Text>
-          <Text >R$2,50 </Text>
-          </View>
+        <View>
+          <Text style={{marginLeft: 12, color:"#FFF"}}>Banana da terra</Text>              
+        </View>
+    
+        <View style={{marginTop: 15}}> 
+          <Text style={{fontSize:14, color: "#FFF"}}>Unidades: <Text style={{fontSize:12, color: "#FFF"}}>22</Text></Text>
+        </View>
+      </View> 
+      </View>
 
+      <View style ={{marginLeft: "15%"}}>
+        <View style={{width:'80%', height:220, backgroundColor:'#733BE3', borderRadius:13, justifyContent:'center', alignItems:'center', marginTop:30}}>
 
-          
-    </SafeAreaView>
+         <Image
+           style={styles.imgSize}
+          source={require("../../assets/Banana.png")}
+        />
+
+        <View>
+          <Text style={{marginLeft: 12, color:"#FFF"}}>Banana da terra</Text>              
+        </View>
+    
+        <View style={{marginTop: 15}}> 
+          <Text style={{fontSize:14, color: "#FFF"}}>Unidades: <Text style={{fontSize:12, color: "#FFF"}}>22</Text></Text>
+        </View>
+      </View> 
+      </View>
+
+      <View style ={{marginLeft: "15%"}}>
+        <View style={{width:'80%', height:220, backgroundColor:'#733BE3', borderRadius:13, justifyContent:'center', alignItems:'center', marginTop:30}}>
+
+         <Image
+           style={styles.imgSize}
+          source={require("../../assets/Banana.png")}
+        />
+
+        <View>
+          <Text style={{marginLeft: 12, color:"#FFF"}}>Banana da terra</Text>              
+        </View>
+    
+        <View style={{marginTop: 15}}> 
+          <Text style={{fontSize:14, color: "#FFF"}}>Unidades: <Text style={{fontSize:12, color: "#FFF"}}>22</Text></Text>
+        </View>
+      </View> 
+      </View>
+
+      
+  </ScrollView>
+
+   
+  );
+}
+
+const styles = StyleSheet.create({
+  imgSize:{
+    width:98,
+    height:98,
+    marginBottom:25,
+    borderRadius: 15
+  }
+
+});
+

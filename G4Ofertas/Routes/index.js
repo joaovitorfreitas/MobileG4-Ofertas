@@ -6,7 +6,9 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import login from '../Screens/Login/index'
 import Perfil from '../Screens/Perfil/index'
 import UserRegister from '../Screens/RegisterUser/index'
-import PasswdPage from '../Screens/RecuperarSenha/index'
+import ListarProduto from '../Screens/ListarProduto/index'
+import PerfilProduto from '../Screens/PerfilProduto/index'
+
 
 
 const StackHome = createStackNavigator();
@@ -21,6 +23,8 @@ export default function Route() {
         <StackHome.Screen name="Perfil" options={{headerShown: false}}>{() => (
           <Tab.Navigator initialRouteName="Perfil" options={{headerShown: false}}>
             <Tab.Screen name="Perfil" component={Perfil} />
+            <Tab.Screen name="ListarProduto" component={ListarProduto} />
+            <Tab.Screen name="Ofertas" component={ListarProduto} />
           </Tab.Navigator>)}
         </StackHome.Screen>
     </StackHome.Navigator>
