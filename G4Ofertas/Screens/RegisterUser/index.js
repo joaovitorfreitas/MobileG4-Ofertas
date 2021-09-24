@@ -126,8 +126,7 @@ const styles = StyleSheet.create({
 
     },
     TextCad:{
-      color: "#D95843",
-      fontSize: 16
+       fontSize: 16
     },
     ViewSeta:{
       position: "absolute",

@@ -14,24 +14,24 @@ export default function PasswdPage( { navigation }) {
             </View>
           <StatusBar style="auto" hidden={true}/>
 
-          <View>
-          <Text>Email: </Text>
-            <TextInput
-            style={styles.input}    
-            /> 
+            <View>
+            <Text>Email: </Text>
+              <TextInput
+              style={styles.input}    
+              /> 
 
-          <Text>Enviaremos um email de confirmação para mudarmos sua senha </Text>
-            <TextInput
-            style={styles.input}    
-            />       
+            <Text>Enviaremos um email de confirmação para mudarmos sua senha </Text>
+              <TextInput
+              style={styles.input}    
+              />       
 
-            <TouchableOpacity
-              onPress={() => navigation.navigate("UserRegister")}
-            > 
-            <Text>Enviar</Text>
-            </TouchableOpacity>  
+              <TouchableOpacity
+                onPress={() => navigation.navigate("UserRegister")}
+              > 
+              <Text>Enviar</Text>
+              </TouchableOpacity>  
 
-            </View>
+              </View>
             </View>
     </SafeAreaView>
     );  
